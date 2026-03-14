@@ -1,0 +1,10 @@
+name: Yuvaraj/Pipeline
+ 
+on: push
+ 
+jobs:
+Yuvaraj-job:
+    runs-on: ubuntu-latest 
+    steps:
+      -name:print Yuvaraj job
+      run: echo "Hello Yuvaraj"
