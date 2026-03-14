@@ -1,10 +1,10 @@
-name: Yuvaraj/Pipeline
+name: Yuvaraj-Pipeline
  
-on: push
+on: workflow_dispatch
  
 jobs:
-Yuvaraj-job:
- runs-on: ubuntu-latest 
- steps:
-  -name:print Yuvaraj job
-  run: echo "Hello Yuvaraj"
+ Yuvaraj-job:
+  runs-on: ubuntu-latest 
+  steps:
+  - name:print Yuvaraj job
+  run: echo"Hello Yuvaraj"
