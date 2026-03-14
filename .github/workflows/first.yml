@@ -1,18 +1,20 @@
 name: Yuvaraj-Pipeline
- 
-on: workflow_dispatch
- 
+
+on:
+  workflow_dispatch
+
 jobs:
- Yuvaraj-job:
-  runs-on: ubuntu-latest 
-  steps:
-   - name: print Yuvaraj job
-     run: echo "Hello Yuvaraj"
-   - name: install python
-     uses: actions/setuppython@v6
-     with:
-       python-version: '3.13'
-   - name: check python version
-     run: python --version
-     
-     
+  Yuvaraj-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Yuvaraj job
+        run: echo "Hello Yuvaraj"
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Check Python version
+        run: python --version
