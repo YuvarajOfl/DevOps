@@ -11,7 +11,7 @@ jobs:
    - name: install python
      uses: actions/setuppython@v6
      with:
-         python-version: '3.13'
+       python-version: '3.13'
    - name: check python version
      run: python --version
      
